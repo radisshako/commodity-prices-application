@@ -1,0 +1,126 @@
+/*setting the width and background colour of the page*/
+html {
+    width: 100%;
+    background-color: aliceblue;
+}
+/*dispalying the divs in the page as a grid and setting the areas */
+.grid-container{
+    display: grid;
+    grid-template-columns: 30%, 70%;
+    grid-template-rows: 10% 80% 20%;
+    grid-template-areas: 
+        "header header"
+        "list canvas"
+        "dashboard dashboard"
+}
+/*The header grid area */
+#header{
+    grid-area: header;
+}
+/*The droplist_div grid area*/
+#droplist_div{
+    grid-area: list;
+    margin-top: 55px;
+
+}
+
+/*The canvas_div size, position and colour*/
+#canvas_div{
+    grid-area: canvas;
+    position: absolute;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    background-color: white;
+    margin-top: 20px;
+    height: 500px;
+    width: 900px;
+    margin-left: 50%;
+}
+/*The select element size, position and colour*/
+select{
+    background-color:rgb(12, 12, 184);
+    color:aliceblue;
+    width:300px;
+    height:50px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+/*The clear button size, position and colour*/
+#clear_button{
+    background-color:#2fe47e;
+    width:120px;
+    height:50px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+/*The graph button size, position and colour*/
+#graph_button{
+    background-color:#2f93e4;
+    margin-right: 5px;
+    width:67px;
+    height:40px;
+    border-radius: 10px;
+}
+/*The multi button size, position and colour*/
+#multi_button{
+    background-color:#23ce6d;
+    margin-right: 5px;
+    width:83px;
+    height:40px;
+    border-radius: 10px;
+}
+/*The delete button size, position and colour*/
+#deleteButton{
+    background-color:rgb(158, 16, 16);
+    color: white;
+    margin-right: 5px;
+    width:67px;
+    height:40px;
+    border-radius: 10px;
+}
+
+/*The dashboard div border, background,size, position and colour*/
+#dashboard_div{
+    border: solid, black;
+    background-color: lightslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    grid-area: dashboard;
+    height: 300px;
+    width: 100%
+}
+/*The divs within the dashboard div border, background,size, position and colour*/
+#dashboard_div div{
+    width: 250px;
+    height: 275px;
+    margin-left: 15px;;
+    background-color: rgb(87, 82, 82);
+    font-size: 15px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(5, 5, 48);
+}
+/*h1 Header colour*/
+h1{
+    color: white;
+}
+/* h2 colour */
+h2{
+    color: rgb(182, 81, 22);;
+}
+
+/*The header div border, background,size, position and colour*/
+#header{
+    background-color: #1c76cf;
+    border-style: solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/*droplist_div displayed inblock*/
+#droplist_div *{
+    display: block
+}

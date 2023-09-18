@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Page header-->
+    <head>
+        <!--character encoding-->
+        <meta charset="UTF-8">
+        <!--Page title-->
+        <title>Commodity Prices</title>
+        <!--css style sheet link-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--Link to javascript file-->
+        <script src="widget.js"></script>
+        <!--Link to chart js for graph drawing-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <!--Page body-->
+    <!--Onload function makes request to popualate dropdown optionslist-->
+    <body onload="startup()">
+        <div class="grid-contianer">
+            <!--Heading of page-->
+            <div id="header">
+                <h1>Commodity Prices</h1>
+            </div>
+            <!--div for the canvas-->
+            <div class="canvas" id="canvas_div">
+                <!--canvas for graph-->
+                <canvas id="graph_canvas"></canvas>
+            </div>
+            <!--div for drop down list and clear button-->
+            <div class="droplist" id="droplist_div">
+                <!--Options List-->
+                <select id="options_list"></select>
+                <input id="clear_button" type="button" value="Clear" onclick="clearCanvas()">
+            </div>
+            <!--div for the dashboard-->
+            <div class="dashboard" id="dashboard_div"></div>
+        </div>
+    </body>
+</html>
